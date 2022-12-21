@@ -45,6 +45,7 @@ a{
 .container{
     max-width: 1300px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .container-small{
@@ -56,10 +57,26 @@ a{
     display: flex;
 }
 
+.col{
+    padding: 2rem 1rem;
+}
+
+
+.pad-top-big{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.pad-top-small{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+/* Text */
+
 .text-center{
     text-align: center;
 }
-
 
 /********************************* 
     HEADER
@@ -87,14 +104,93 @@ a{
     color: white;
 }
 
-/* Media Queries */
+
+
+/********************************* 
+   MAIN
+*********************************/
+
+/* Section Demo application */
+
+section.demo-application{
+    /* Debug */
+    min-height: 500px;
+
+    background-color: white;
+}
+
+.demo-application .row{
+    flex-wrap: wrap;
+    gap: 1rem;
+    column-gap: 1rem;
+}
+
+.demo-application .col-big{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 3 * 2 - 1rem);
+    padding: 2rem 1rem 0 1rem;
+    background-color: #b5ddff ;
+    border-radius: 20px;
+}
+
+.demo-application .col{
+    width: calc(100% / 3 - 1rem );
+    background-color: #b5ddff ;
+    border-radius: 20px;
+}
+
+.demo-application .card-text{
+    width: 50%;
+}
+
+.demo-application .card-img {
+    width: 50%;
+}
+
+.demo-application .card-img img{
+    width: 65%;
+}
+/* Text */
+
+.demo-application .card h4,
+.demo-application .card-text h4{
+    color: #0084fd;
+    font-size: 1.3rem;
+    font-family: arial;
+    padding-bottom: 1.3rem;
+}
+
+.demo-application .card i{
+    font-size: 5rem;
+    color: #0084fd;
+    padding-bottom: 1.3rem;
+}
+
+.demo-application .card p, 
+.demo-application .card-text p{
+    color: #5a6e7f;
+    font-size: 1rem;
+    font-family: arial;
+    font-weight: 600;
+    line-height: 1.3rem;
+    padding-bottom: 1.3rem;
+}
+
+
+/********************************* 
+   MEDIA QUERIES
+*********************************/
+
+/* ---Tablet vision---- */
 
 @media screen and (max-width:769px){
+
     .container{
         max-width: 100%;
         padding: 0 1rem;
     }
-
+/* Header */
     .col-nav{
         display: none;
     }
@@ -102,10 +198,40 @@ a{
     .hamburger-menu{
         display: block;
     }
+    
+/* Section Demo Application */
+    .col-big .card-text,
+    .col-big .card-img{
+        width: 100%;
+    }
+
+    .col-big .card-img img{
+        width: 50%;
+        padding-top: 1.3rem;
+    }
 
 }
 
+/* ---Mobile vision---- */
+@media screen and (max-width:481px){
 
+/* Section Demo Application */
+    .demo-application .row{
+        flex-direction: column;
+    }
 
+    .demo-application .col{
+        width: 100%;
+    }
+
+    .demo-application .col-big{
+        width: 100%;
+        text-align: center;
+    }
+
+    .col-big .card-img img{
+        width: 80%;
+    }
+}
 
 
