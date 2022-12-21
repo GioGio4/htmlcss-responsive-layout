@@ -55,6 +55,7 @@ a{
 
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col{
@@ -113,9 +114,6 @@ a{
 /* Section Demo application */
 
 section.demo-application{
-    /* Debug */
-    min-height: 500px;
-
     background-color: white;
 }
 
@@ -177,6 +175,26 @@ section.demo-application{
     padding-bottom: 1.3rem;
 }
 
+/* Section strategic plan */
+
+.strategic-plan{
+    background-color: #9792e4 ;
+}
+
+.strategic-plan .col{
+    width: 50%;
+    padding: 2.6rem;
+}
+.strategic-plan .card img{
+    width: 50%;
+}
+
+.strategic-plan .card{
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+}
+
 
 /********************************* 
    MEDIA QUERIES
@@ -210,6 +228,17 @@ section.demo-application{
         padding-top: 1.3rem;
     }
 
+    /* Section strategic plan */
+
+    .strategic-plan .col{
+        width: 100%;
+    }
+
+    .strategic-plan .col img{
+        width: 80%;
+    }
+
+
 }
 
 /* ---Mobile vision---- */
@@ -231,6 +260,12 @@ section.demo-application{
 
     .col-big .card-img img{
         width: 80%;
+    }
+
+    /* Section strategic plan */
+
+    .strategic-plan .row{
+        flex-direction: column;
     }
 }
 
