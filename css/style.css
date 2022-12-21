@@ -6,3 +6,106 @@
     box-sizing: border-box;
 }
 
+/* UTILS DEBUG
+
+Header color #0084fd
+Section 1 card color #b5ddff
+Section 1 icon color #0084fd
+Section 2 bg color #9792e4
+Footer bg color #333333 */
+
+/********************************* 
+    GENERICS
+*********************************/
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+.btn{
+    border: 1px solid transparent;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/********************************* 
+    UTILS
+*********************************/
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.container-small{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/********************************* 
+    HEADER
+*********************************/
+
+.site-header{
+    background-color: #0084fd ;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.site-header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header ul>li{
+    margin-left: 1.5rem;
+    color: white;
+}
+
+.hamburger-menu{
+    display: none;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:769px){
+    .container{
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .col-nav{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
+
+}
+
+
+
+
+
