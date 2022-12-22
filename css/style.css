@@ -240,6 +240,25 @@ section.demo-application{
     object-fit: cover;
 }
 
+/* Section Benefits */
+
+.benefits{
+    background-color: #9792e4;
+}
+
+.benefits .row{
+    row-gap: 3rem;
+    justify-content: space-between;
+}
+
+.benefits .col{
+    background-color: white;
+    border-radius: 20px;
+    width: calc(100% / 3 - 2rem);
+}
+
+
+
 
 
 /********************************* 
@@ -283,6 +302,11 @@ section.demo-application{
         width: 80%;
     }
 
+    /* Section BENEFITS */
+
+    .benefits .col{
+        width: calc(100% / 2 - 2rem);
+    }
 
 }
 
@@ -328,6 +352,11 @@ section.demo-application{
         padding-left: 0;
     }
 
+    /* Section BENEFITS */
+
+    .benefits .col{
+        width: 100%;
+    }
 }
 
 
