@@ -55,6 +55,13 @@ a{
     padding: 0 1rem;
 }
 
+.container-xsmall{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -259,8 +266,6 @@ section.demo-application{
 
 /* Section About */
 
-
-
 .about .col.text-about{
     width: calc(70% - 2rem);
     padding: 0 1rem;
@@ -281,6 +286,14 @@ section.demo-application{
 .about p{
     margin: 2.5rem 0;
     line-height: 2rem;
+}
+
+/* Section get started */
+
+.started{
+    background-color: #9792e4;
+    padding: 3rem 0;
+    line-height: 3rem;
 }
 
 
