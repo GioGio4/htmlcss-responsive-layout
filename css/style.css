@@ -61,6 +61,12 @@ a{
     padding: 0 1rem;
 }
 
+.container-xxsmall{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 
 .row{
     display: flex;
@@ -296,6 +302,13 @@ section.demo-application{
     line-height: 3rem;
 }
 
+/********************************* 
+   FOOTER
+*********************************/
+footer{
+    background-color:#333333 ;
+    padding: 3rem 0;
+}
 
 
 
