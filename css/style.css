@@ -46,11 +46,13 @@ a{
     max-width: 1300px;
     margin: 0 auto;
     flex-wrap: wrap;
+    padding: 0 1rem;
 }
 
 .container-small{
     max-width: 1050px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .row{
@@ -181,6 +183,10 @@ section.demo-application{
     background-color: #9792e4 ;
 }
 
+.strategic-plan .row{
+    align-items: flex-end;
+}
+
 .strategic-plan .col{
     width: 50%;
     padding: 2.6rem;
@@ -192,8 +198,48 @@ section.demo-application{
 .strategic-plan .card{
     background-color: white;
     border-radius: 20px;
+    padding: 1rem 2rem;
     color: black;
 }
+
+.icon-arrow{
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    background-color: #9792e4;
+    border-radius: 50%;
+}
+
+/* Section TESTIMONIALS */
+
+.testimonials{
+    background-color: white;
+}
+
+.testimonials .col{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #9792e4;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+}
+
+.testimonials .col .round-img{
+    width: 30%;
+    flex-shrink: 0;
+    padding-left: 1rem;
+    margin-right: 1rem;
+}
+
+.testimonials .col .round-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 
 
 /********************************* 
@@ -206,7 +252,6 @@ section.demo-application{
 
     .container{
         max-width: 100%;
-        padding: 0 1rem;
     }
 /* Header */
     .col-nav{
@@ -267,6 +312,22 @@ section.demo-application{
     .strategic-plan .row{
         flex-direction: column;
     }
+
+    /* Section TESTIMONIALS */
+
+    .testimonials .col{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        
+    }
+    
+    .testimonials .col .round-img{
+        width: 100%;
+        margin-bottom: 1rem;
+        padding-left: 0;
+    }
+
 }
 
 
